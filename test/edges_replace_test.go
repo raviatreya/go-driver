@@ -28,7 +28,7 @@ import (
 	"strings"
 	"testing"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // TestReplaceEdges creates documents, replaces them and then checks the replacements have succeeded.

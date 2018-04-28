@@ -26,7 +26,7 @@ import (
 	"fmt"
 	"testing"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // TestEnsureFullTextIndex creates a collection with a full text index.

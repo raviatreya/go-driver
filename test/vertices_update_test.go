@@ -29,7 +29,7 @@ import (
 	"strings"
 	"testing"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // TestUpdateVertices creates documents, updates them and then checks the updates have succeeded.

@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // TestClusterHealth tests the Cluster.Health method.

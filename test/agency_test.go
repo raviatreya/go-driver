@@ -29,10 +29,10 @@ import (
 	"reflect"
 	"testing"
 
-	driver "github.com/arangodb/go-driver"
-	"github.com/arangodb/go-driver/agency"
-	"github.com/arangodb/go-driver/http"
-	"github.com/arangodb/go-driver/util"
+	driver "github.com/raviatreya/go-driver"
+	"github.com/raviatreya/go-driver/agency"
+	"github.com/raviatreya/go-driver/http"
+	"github.com/raviatreya/go-driver/util"
 )
 
 // getAgencyEndpoints queries the cluster to get all agency endpoints.

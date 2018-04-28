@@ -29,7 +29,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/arangodb/go-driver"
+	"github.com/raviatreya/go-driver"
 )
 
 var (

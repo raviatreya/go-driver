@@ -29,7 +29,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // Authentication implements a kind of authentication.
