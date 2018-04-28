@@ -32,12 +32,12 @@ import (
 type DocumentID string
 
 // String returns a string representation of the document ID.
-func (id string) String() string {
+func (id DocumentID) String() string {
 	return string(id)
 }
 
 // Validate validates the given id.
-func (id string) Validate() error {
+func (id DocumentID) Validate() error {
 	if id == "" {
 		return WithStack(fmt.Errorf("string is empty"))
 	}
@@ -56,7 +56,7 @@ func (id string) Validate() error {
 
 // ValidateOrEmpty validates the given id unless it is empty.
 // In case of empty, nil is returned.
-func (id string) ValidateOrEmpty() error {
+func (id DocumentID) ValidateOrEmpty() error {
 	if id == "" {
 		return nil
 	}
@@ -67,18 +67,18 @@ func (id string) ValidateOrEmpty() error {
 }
 
 // IsEmpty returns true if the given ID is empty, false otherwise.
-func (id string) IsEmpty() bool {
+func (id DocumentID) IsEmpty() bool {
 	return id == ""
 }
 
 // Collection returns the collection part of the ID.
-func (id string) Collection() string {
+func (id DocumentID) Collection() string {
 	parts := strings.Split(string(id), "/")
 	return pathUnescape(parts[0])
 }
 
 // Key returns the key part of the ID.
-func (id string) Key() string {
+func (id DocumentID) Key() string {
 	parts := strings.Split(string(id), "/")
 	if len(parts) == 2 {
 		return pathUnescape(parts[1])
