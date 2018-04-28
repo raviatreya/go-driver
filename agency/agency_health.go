@@ -30,7 +30,7 @@ import (
 	"sync"
 	"time"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 const (

@@ -33,7 +33,7 @@ import (
 	"testing"
 	"time"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 	"github.com/coreos/go-iptables/iptables"
 )
 

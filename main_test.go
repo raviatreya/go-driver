@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	driver "github.com/arangodb/go-driver"
-	"github.com/arangodb/go-driver/http"
+	driver "github.com/raviatreya/go-driver"
+	"github.com/raviatreya/go-driver/http"
 )
 
 // TestMain creates a simple connection and waits for the server to be ready.

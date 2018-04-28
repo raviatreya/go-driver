@@ -28,7 +28,7 @@ import (
 	"reflect"
 	"testing"
 
-	driver "github.com/arangodb/go-driver"
+	driver "github.com/raviatreya/go-driver"
 )
 
 // ensureUser is a helper to check if a user exists and create it if needed.

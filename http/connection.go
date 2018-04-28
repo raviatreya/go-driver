@@ -35,9 +35,9 @@ import (
 	"strings"
 	"time"
 
-	driver "github.com/arangodb/go-driver"
-	"github.com/arangodb/go-driver/cluster"
-	"github.com/arangodb/go-driver/util"
+	driver "github.com/raviatreya/go-driver"
+	"github.com/raviatreya/go-driver/cluster"
+	"github.com/raviatreya/go-driver/util"
 	velocypack "github.com/arangodb/go-velocypack"
 )
 
