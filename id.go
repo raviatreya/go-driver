@@ -27,19 +27,19 @@ import (
 	"strings"
 )
 
-// DocumentID references a document in a collection.
+// string references a document in a collection.
 // Format: collection/_key
 type DocumentID string
 
 // String returns a string representation of the document ID.
-func (id DocumentID) String() string {
+func (id string) String() string {
 	return string(id)
 }
 
 // Validate validates the given id.
-func (id DocumentID) Validate() error {
+func (id string) Validate() error {
 	if id == "" {
-		return WithStack(fmt.Errorf("DocumentID is empty"))
+		return WithStack(fmt.Errorf("string is empty"))
 	}
 	parts := strings.Split(string(id), "/")
 	if len(parts) != 2 {
@@ -56,7 +56,7 @@ func (id DocumentID) Validate() error {
 
 // ValidateOrEmpty validates the given id unless it is empty.
 // In case of empty, nil is returned.
-func (id DocumentID) ValidateOrEmpty() error {
+func (id string) ValidateOrEmpty() error {
 	if id == "" {
 		return nil
 	}
@@ -67,18 +67,18 @@ func (id DocumentID) ValidateOrEmpty() error {
 }
 
 // IsEmpty returns true if the given ID is empty, false otherwise.
-func (id DocumentID) IsEmpty() bool {
+func (id string) IsEmpty() bool {
 	return id == ""
 }
 
 // Collection returns the collection part of the ID.
-func (id DocumentID) Collection() string {
+func (id string) Collection() string {
 	parts := strings.Split(string(id), "/")
 	return pathUnescape(parts[0])
 }
 
 // Key returns the key part of the ID.
-func (id DocumentID) Key() string {
+func (id string) Key() string {
 	parts := strings.Split(string(id), "/")
 	if len(parts) == 2 {
 		return pathUnescape(parts[1])
@@ -86,7 +86,7 @@ func (id DocumentID) Key() string {
 	return ""
 }
 
-// NewDocumentID creates a new document ID from the given collection, key pair.
-func NewDocumentID(collection, key string) DocumentID {
-	return DocumentID(pathEscape(collection) + "/" + pathEscape(key))
+// Newstring creates a new document ID from the given collection, key pair.
+func Newstring(collection, key string) string {
+	return string(pathEscape(collection) + "/" + pathEscape(key))
 }
